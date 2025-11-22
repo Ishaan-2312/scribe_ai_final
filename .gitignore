@@ -1,0 +1,56 @@
+# ---- Node.js / Next.js Monorepo Ignore Patterns ----
+
+# Node modules (backend + frontend)
+node_modules/
+**/node_modules/
+
+# Build/temp dirs
+.next/
+**/.next/
+out/
+build/
+tmp/
+**/tmp/
+
+# Local env files (DO NOT TRACK SECRETS)
+.env
+**/.env
+.env.local
+**/.env.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Mac/Windows/Editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Prisma
+prisma/.env
+**/prisma/.env
+
+# TypeScript build/coverage
+dist/
+coverage/
+
+# Ignore lockfile backups/old
+package-lock.json.*
+yarn.lock.*
+pnpm-lock.yaml.*
+
+# Misc
+*.tgz
+*.bak
+*.tmp
+*.cache
+
+# Don’t commit SvelteKit build
+.svelte-kit/
+**/.svelte-kit/
